@@ -1,0 +1,17 @@
+.player-card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .player-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  

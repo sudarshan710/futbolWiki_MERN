@@ -1,0 +1,23 @@
+/* HEADING FONT */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* NORMAL USAGE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&family=Young+Serif&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading {
+  font-family: 'Young Serif', serif;
+}
+
+html,
+body,
+#root,
+.app{
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #333333;
+}
