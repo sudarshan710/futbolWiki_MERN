@@ -22,9 +22,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 dotenv.config();
 const app = express();
@@ -52,6 +49,9 @@ app.use(cors());
 // Routes with files //
 app.use("/players/addPlayer", verifyToken, verifyRole(['admin']), addPlayer);
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.get('/favicon.ico', (req, res) => {
   const faviconPath = path.join(__dirname, 'public/assets/favicon.ico');
