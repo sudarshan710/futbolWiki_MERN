@@ -21,6 +21,11 @@ import verifyRole from "./middleware/verifyRole.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 dotenv.config();
 const app = express();
 app.use(express.json());

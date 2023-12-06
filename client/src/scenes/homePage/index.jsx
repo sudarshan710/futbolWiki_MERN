@@ -15,7 +15,7 @@ const HomePage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5001/players/", {
+    fetch("https://serverdeploy-7xbn.onrender.com/players/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

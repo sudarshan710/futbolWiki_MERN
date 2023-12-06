@@ -34,7 +34,7 @@ const RegisterForm = () => {
       // Your registration logic here
 
       const savedUserResponse = await fetch(
-        "http://localhost:5001/auth/register",
+        "https://serverdeploy-7xbn.onrender.com/auth/register",
         {
           method: "POST",
           headers: {

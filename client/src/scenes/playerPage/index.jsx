@@ -15,7 +15,7 @@ const PlayerPage = () => {
       try {
         if (token && playerId) {
           const response = await fetch(
-            `http://localhost:5001/players/${playerId}`,
+            `https://serverdeploy-7xbn.onrender.com/players/${playerId}`,
             {
               headers: {
                 "Content-Type": "application/json",
